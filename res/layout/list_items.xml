@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_isBreakingNews"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/item_image"
+        android:gravity="center"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tv_hasVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_title"
+        android:layout_alignParentRight="true"
+        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00FF00" />
+
+    <TextView
+        android:id="@+id/tv_isBreakingNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/tv_hasVideo"
+        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#0000FF" />
+
+    <TextView
+        android:id="@+id/tv_isLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_image"
+        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FF0000" />
+
+</RelativeLayout>
